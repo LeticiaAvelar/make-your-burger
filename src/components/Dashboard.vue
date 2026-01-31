@@ -22,10 +22,11 @@
                     </ul>
                 </div>
                 <div>
-                    <select name="status" class="status">
+                    <select name="status" class="status" @change="updateBurger($event, burger.id)">
                         <option value="">Selecione</option>
+                        <option v-for="status in status" :key="status.id" :value="status.tipo" :selected="burger.status == status.tipo">{{ status.tipo }}</option>
                     </select>
-                    <button class="delete-btn">Cancelar</button>
+                    <button class="delete-btn" @click="deleteBurger(burger.id)">Cancelar</button>
                 </div>
             </div>
         </div>
@@ -48,7 +49,43 @@ async function getPedidos() {
 
     burgers.value = data; // data é o array retornado pelo fetch
 
-    console.log(burgers.value)
+    // resgatar os status
+    getStatus();
+}
+
+async function getStatus() {
+    const req = await fetch('http://localhost:3000/status')
+
+    const data = await req.json();
+
+    status.value = data;
+}
+
+async function deleteBurger(id) {
+    const req = await fetch(`http://localhost:3000/burgers/${id}`, {
+        method: "DELETE"
+    });
+
+    const res = await req.json();
+
+    // mensagem
+
+    getPedidos();
+
+}
+
+async function updateBurger(e, id) {
+    const option = e.target.value;
+
+    const dataJson = JSON.stringify({ status: option });
+
+    const req = await fetch(`http://localhost:3000/burgers/${id}`, {
+        method: "PATCH",
+        headers: { "Content-Type": "application/json" },
+        body: dataJson
+    })
+
+    const res = await req.json();
 }
 
 onMounted(() => {

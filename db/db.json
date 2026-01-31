@@ -89,33 +89,7 @@
         "Tomate",
         "Cheddar"
       ],
-      "status": "Solicitado"
-    },
-    {
-      "id": "d165",
-      "nome": "Lucas",
-      "carne": "Maminha",
-      "pao": "Parmesão e Orégano",
-      "opcionais": [
-        "Bacon",
-        "Cebola roxa",
-        "Cheddar"
-      ],
-      "status": "Solicitado"
-    },
-    {
-      "id": "0b69",
-      "nome": "Marta",
-      "carne": "Picanha",
-      "pao": "Italiano Branco",
-      "opcionais": [
-        "Bacon",
-        "Salame",
-        "Cebola roxa",
-        "Tomate",
-        "Cheddar"
-      ],
-      "status": "Solicitado"
+      "status": "Em produção"
     },
     {
       "id": "7b1d",
@@ -129,6 +103,42 @@
         "Tomate",
         "Cheddar",
         "Pepino"
+      ],
+      "status": "Em produção"
+    },
+    {
+      "id": "6329",
+      "nome": "Marta",
+      "carne": "Maminha",
+      "pao": "Parmesão e Orégano",
+      "opcionais": [
+        "Bacon",
+        "Cebola roxa"
+      ],
+      "status": "Solicitado"
+    },
+    {
+      "id": "9e24",
+      "nome": "Lucas",
+      "carne": "Picanha",
+      "pao": "3 Queijos",
+      "opcionais": [
+        "Bacon",
+        "Salame",
+        "Cebola roxa",
+        "Cheddar"
+      ],
+      "status": "Finalizado"
+    },
+    {
+      "id": "14a8",
+      "nome": "Maria",
+      "carne": "Veggie burger",
+      "pao": "Integral",
+      "opcionais": [
+        "Tomate",
+        "Pepino",
+        "Cebola roxa"
       ],
       "status": "Solicitado"
     }
