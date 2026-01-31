@@ -65,17 +65,72 @@
   },
   "status": [
     {
-      "id": 1,
+      "id": "1",
       "tipo": "Solicitado"
     },
     {
-      "id": 2,
+      "id": "2",
       "tipo": "Em produção"
     },
     {
-      "id": 3,
+      "id": "3",
       "tipo": "Finalizado"
     }
   ],
-  "burgers": []
+  "burgers": [
+    {
+      "id": "a258",
+      "nome": "Leticia",
+      "carne": "Picanha",
+      "pao": "3 Queijos",
+      "opcionais": [
+        "Salame",
+        "Cebola roxa",
+        "Tomate",
+        "Cheddar"
+      ],
+      "status": "Solicitado"
+    },
+    {
+      "id": "d165",
+      "nome": "Lucas",
+      "carne": "Maminha",
+      "pao": "Parmesão e Orégano",
+      "opcionais": [
+        "Bacon",
+        "Cebola roxa",
+        "Cheddar"
+      ],
+      "status": "Solicitado"
+    },
+    {
+      "id": "0b69",
+      "nome": "Marta",
+      "carne": "Picanha",
+      "pao": "Italiano Branco",
+      "opcionais": [
+        "Bacon",
+        "Salame",
+        "Cebola roxa",
+        "Tomate",
+        "Cheddar"
+      ],
+      "status": "Solicitado"
+    },
+    {
+      "id": "7b1d",
+      "nome": "João Carlos",
+      "carne": "Picanha",
+      "pao": "3 Queijos",
+      "opcionais": [
+        "Bacon",
+        "Salame",
+        "Cebola roxa",
+        "Tomate",
+        "Cheddar",
+        "Pepino"
+      ],
+      "status": "Solicitado"
+    }
+  ]
 }
