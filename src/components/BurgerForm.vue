@@ -40,7 +40,7 @@
 
 <script setup>
 import { ref, onMounted } from 'vue'
-// import Message from './Message.vue'
+import Message from './Message.vue' // 
 
 // ------------------
 // VARIÁVEIS REATIVAS
@@ -89,11 +89,12 @@ async function createBurger(e) {
 
     const res = await req.json()
     console.log(res)
-
-    msg.value = 'Pedido realizado com sucesso!'
+    
+    // colocar uma mensagem no sistema
+    msg.value = `Pedido n° ${res.id} realizado com sucesso!`;
 
     // limpar mensagem
-    setTimeout(() => (msg.value = ''), 3000)
+    setTimeout(() => (msg.value = ''), 5000)
 
     // limpar campos
     nome.value = ''
@@ -133,7 +134,7 @@ label {
 input,
 select {
     padding: 5px 10px;
-    width: 300px;
+    width: 100%;
 }
 
 #opcionais-container {
