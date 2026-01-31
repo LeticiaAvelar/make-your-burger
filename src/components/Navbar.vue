@@ -1,6 +1,6 @@
 <script setup>
-    const logo = "/img/logo.png"
-    const alt = "Make Your Burger"
+const logo = "/img/logo.png"
+const alt = "Make Your Burger"
 </script>
 
 <template>
@@ -14,33 +14,33 @@
 </template>
 
 <style scoped>
-    #nav {
-        background-color: #222;
-        border-bottom: 4px solid #111;
-        padding: 15px 50px;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-    }
+#nav {
+    background-color: #222;
+    border-bottom: 4px solid #111;
+    padding: 15px 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
 
-    #nav #logo-url {
-        margin: auto;
-        margin-left: 0;
-    }
+#nav #logo-url {
+    margin: auto;
+    margin-left: 0;
+}
 
-    #logo {
-        width: 40px;
-        height: 40px;
-    }
+#logo {
+    width: 40px;
+    height: 40px;
+}
 
-    #nav a {
-        color: #FCBA03;
-        text-decoration: none;
-        margin: 12px;
-        transition: 0.5s;
-    }
+#nav a {
+    color: #FCBA03;
+    text-decoration: none;
+    margin: 12px;
+    transition: 0.5s;
+}
 
-    #nav a:hover {
-        color: #FFF;
-    }
+#nav a:hover {
+    color: #FFF;
+}
 </style>
