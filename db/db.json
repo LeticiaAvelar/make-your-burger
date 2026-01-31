@@ -104,7 +104,7 @@
         "Cheddar",
         "Pepino"
       ],
-      "status": "Em produção"
+      "status": "Finalizado"
     },
     {
       "id": "6329",
@@ -131,14 +131,14 @@
       "status": "Finalizado"
     },
     {
-      "id": "14a8",
+      "id": "b448",
       "nome": "Maria",
       "carne": "Veggie burger",
       "pao": "Integral",
       "opcionais": [
+        "Cebola roxa",
         "Tomate",
-        "Pepino",
-        "Cebola roxa"
+        "Pepino"
       ],
       "status": "Solicitado"
     }

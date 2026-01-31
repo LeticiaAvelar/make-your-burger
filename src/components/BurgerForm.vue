@@ -91,7 +91,7 @@ async function createBurger(e) {
     console.log(res)
     
     // colocar uma mensagem no sistema
-    msg.value = `Pedido n° ${res.id} realizado com sucesso!`;
+    msg.value = `Pedido N° ${res.id} realizado com sucesso!`;
 
     // limpar mensagem
     setTimeout(() => (msg.value = ''), 5000)

@@ -1,5 +1,6 @@
 <template>
     <div id="burger-table">
+        <Message :msg="msg" v-show="msg" />
         <div>
             <div id="burger-table-heading">
                 <div class="order-id">#:</div>
@@ -35,12 +36,16 @@
 
 <script setup>
 import { ref, onMounted } from 'vue'
+import Message from './Message.vue'
+
 const burgers = ref([]) // Lista de pedidos // antes era null, agora inicializado como array vazio
 const burger_id = ref(null) // ID do pedido selecionado // null inicial, pode ser atualizado quando selecionar um pedido
 const status = ref([]) // Status dos pedidos // array vazio para poder manipular depois
 
 // null → nenhum valor selecionado ainda (1 item)
 // [] → lista vazia (múltiplos itens)
+
+const msg = ref(null)
 
 async function getPedidos() {
     const req = await fetch('http://localhost:3000/burgers');
@@ -68,7 +73,11 @@ async function deleteBurger(id) {
 
     const res = await req.json();
 
-    // mensagem
+    // colocar uma mensagem no sistema
+    msg.value = `Pedido N° ${res.id} removido com sucesso!`;
+
+    // limpar mensagem
+    setTimeout(() => (msg.value = ''), 5000)
 
     getPedidos();
 
@@ -86,6 +95,12 @@ async function updateBurger(e, id) {
     })
 
     const res = await req.json();
+
+    // colocar uma mensagem no sistema
+    msg.value = `Pedido N° ${res.id} foi atualizado para ${res.status}!`;
+
+    // limpar mensagem
+    setTimeout(() => (msg.value = ''), 5000)
 }
 
 onMounted(() => {
