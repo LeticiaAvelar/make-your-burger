@@ -6,6 +6,7 @@ O projeto foi inspirado e baseado no curso de Vue do **Matheus Battisti (Hora de
 🔗 **Aplicação online:**  
 https://leticiaavelar.github.io/make-your-burger/
 
+ATENÇÃO: Este projeto utiliza dados simulados para criar uma simulação de backend, com foco na lógica de frontend e na interação do usuário.
 
 ---
 
