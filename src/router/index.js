@@ -10,14 +10,13 @@ const routes = [
   {
     path: "/pedidos",
     name: "pedidos",
-
-    component: () =>
-      import("../views/Pedidos.vue"),
+    component: () => import("../views/Pedidos.vue"),
   },
 ];
 
+// Ajuste aqui: BASE_URL precisa ser o nome do repositório
 const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL),
+  history: createWebHistory("/make-your-burger/"), // <- importante para GitHub Pages
   routes,
 });
 
