@@ -1,11 +1,12 @@
 <script setup>
-const alt = "Make Your Burger"
+const logo = process.env.BASE_URL + 'img/logo.png'
+const alt = 'Make Your Burger'
 </script>
 
 <template>
   <nav id="nav">
     <router-link to="/" id="logo-url">
-      <img src="/img/logo.png" :alt="alt" id="logo" />
+      <img :src="logo" :alt="alt" id="logo" />
     </router-link>
     <router-link to="/">Home</router-link>
     <router-link to="/pedidos">Pedidos</router-link>
